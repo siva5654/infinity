@@ -1,0 +1,287 @@
+
+
+/*global css*/
+
+body{
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+	margin: 0px auto;
+		background-color:#e6e5e5;
+		padding: 60px 0;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+*,
+:focus {
+    outline: 0
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom
+}
+
+a {
+    color: #272b3f;
+    text-decoration: none;
+    display: inline-block
+}
+
+a:focus,
+a:hover {
+    text-decoration: none
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+ul , p , h1 , h2 , h3 ,h4 , h5 , h6{
+    margin-bottom: 0px;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        padding: 0 12px
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+.list-inline {
+    padding: 0;
+    font-size: 0;
+    list-style-type: none
+}
+
+.list-inline>li {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 16px
+}
+
+.text-right {
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+
+}
+.show{
+	display: block;
+}
+.none{
+	display: none;
+}
+
+
+.tabs-nav ul {
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
+  margin: 0px auto;
+  font-size: 0px;
+  margin-bottom: 24px;
+}
+
+.tabs-nav li {
+  display: inline-block;
+  width: 50%;
+  font-size: 14px;
+  text-align: center;
+}
+
+.tabs-nav a {
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #000;
+  max-width: 60%;
+  transition: 0.5s;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.tabs-nav ul li.active a{
+	background-color: #30a5da;
+	color: #fff;
+}
+
+.tabs-content {
+  position: relative;
+}
+.tab_div{
+	  padding: 24px;
+  background: #fff;
+  border:1px solid #ccc;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.mg_list >li{
+	position: relative;
+	width: 40%;
+	vertical-align: middle;
+}
+.mg_list >li:last-child{
+	width: 20%;
+	text-align: right;
+}
+.prcd_btn{
+	    position: relative;
+    color: #fff;
+    background-color: #098bc5;
+    padding: 11px 24px;
+    width: 160px;
+    text-align: center;
+    border-radius: 6px;
+}
+.dynamic_values{
+	padding-top: 12px;
+}
+.dynamic_values >span{
+	display: inline-block;
+	padding: 4px 8px;
+	position: relative;
+	font-size: 10px;
+	margin: 5px;
+	background-color: #ccc;
+	border-radius: 6px;
+}
+.fb_container , .yb_container , .twitter_container , .linkedin_container{
+	border:1px solid #ccc;
+	padding: 24px;
+	margin: 4px;
+	border-radius: 6px
+}
+.fb_inp{
+	position: relative;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 12px;
+}
+.go_ing{
+	
+	text-align: right;
+}
+.go_ing button{
+	position: relative;
+	margin-top: 26px;
+    background-color: #30a5da;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 2s;
+
+}
+.go_ing.active button{
+
+	margin-top: 36px;
+}
+.sc_nav_linsk{
+	position: relative;
+}
+.sc_nav_linsk:after{
+	position: absolute;
+    content: "";
+    visibility: hidden;
+    opacity: 0;
+    border: solid #30a5da;
+    border-width: 0 10px 10px 0;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    top: 0;
+    padding: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 30px;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+    margin: -30px auto;
+      animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+    }
+.sc_nav_linsk.active:after{
+	visibility: visible;
+	opacity: 1;
+}
+    @keyframes slidein {
+  from {
+    left: 0 
+  }
+
+  75% {
+    left: 10%
+  }
+
+  to {
+   left: 0
+  }
+}
+
+.sc_nav_linsk >div+div{
+	margin-top: 16px;
+}
+.sc_nav_linsk >div >p>span{
+    padding-left: 12px;
+    vertical-align: middle;
+    font-size: 22px;
+    color: red;
+    }
+    .sc_nav_linsk >div >p>input{
+    	width: 20px;
+    	height: 20px;
+    	vertical-align: middle;
+    	display: inline-block;
+    	cursor: pointer;
+    }
+ .icon_su{
+ 	position: relative;
+ }
+ .icon_su >span{
+ position: absolute;
+    top: 0;
+    font-size: 25px;
+    left: 0;
+    margin: -3px 0;
+ }
